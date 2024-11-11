@@ -11,7 +11,7 @@
         android:id="@+id/edtText"
         android:layout_width="0pt"
         android:layout_height="wrap_content"
-        android:text="Hello World"
+        android:text="Hello"
         android:textSize="10pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
