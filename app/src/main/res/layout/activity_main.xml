@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtText"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProgressBar"
+        app:layout_constraintTop_toBottomOf="@+id/edtText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressBackgroundTint="#ffff00"
+        android:progressTint="#ff0000"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnButton"
+        android:text="Normal Task"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@+id/ProgressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRunnableTask"
+        android:text="Runnable Task"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@+id/btnButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnThreadTask"
+        android:text="Thread Task"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@+id/btnRunnableTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStopThreadTask"
+        android:text="StopThread Task"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@+id/btnThreadTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnThreadHandlerTask"
+        android:text="ThreadHandler Task"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopThreadTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStopThreadHandlerTask"
+        android:text="StopThreadHandler Task"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@+id/btnThreadHandlerTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPauseThreadHandlerTask"
+        android:text="PauseThreadHandler Task"
+        android:textSize="10pt"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopThreadHandlerTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
